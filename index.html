@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My personal portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./images/logo.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="site-main-wrapper">
+      <button class="hamberger">
+        <img src="./images/hamberger.svg" alt="" />
+      </button>
+
+      <div class="mobile-nav">
+        <button class="times"><img src="./images/times.svg" alt="" /></button>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <header>
+        <div class="container">
+          <nav id="main-nav" class="flex items-center justify-between">
+            <div class="left flex items-center">
+              <div class="branding">
+                <img src="./images/logo.png" alt="" style="width: 120px" />
+              </div>
+              <div>
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#work">Projects</a>
+                <a href="#blog">Credentials</a>
+              </div>
+            </div>
+            <div class="right">
+              <button
+                class="btn btn-primary"
+                onclick="location.href='#contact'"
+              >
+                Contact
+              </button>
+            </div>
+          </nav>
+          <div
+            class="hero flex items-center justify-between"
+            style="height: 100vh"
+          >
+            <div class="left flex-1 flex justify-center">
+              <img src="./images/picture.jpg" alt="" />
+            </div>
+            <div class="right flex-1">
+              <h6>Kurt Cyryll Cubelo</h6>
+              <h1>
+                I’m a
+                <div class="typewriter">
+                  <span id="typewriter-text"></span>
+                </div>
+              </h1>
+              <section class="reviews" style="margin-top: 0; padding-top: 0">
+                <div class="slider">
+                  <div class="slide">
+                    <p>
+                      As a dedicated and passionate software engineer, I
+                      specialize in crafting innovative solutions that solve
+                      real-world problems. With a strong background in PHP and
+                      Typescript/JavaScript, I thrive on tackling complex
+                      challenges and delivering high-quality, scalable software.
+                      Let's create something amazing together!
+                    </p>
+                  </div>
+                  <div class="slide">
+                    <p>
+                      As a Business Development Specialist. I focus on building
+                      strong relationships with our clients and ensuring their
+                      needs are met throughout our projects. I manage client
+                      accounts, collaborate with our development team to
+                      translate client requirements into actionable plans, and
+                      oversee quality assurance to make sure everything we
+                      deliver meets our high standards.
+                    </p>
+                  </div>
+                </div>
+                <div class="slider-dots"></div>
+              </section>
+
+              <div>
+                <a href="./resources/CV.pdf" download="KurtCyryllCubelo_CV.pdf">
+                  <button class="btn btn-secondary">DOWNLOAD CV</button>
+                </a>                
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section id="about" class="about">
+        <div class="container flex items-center about-inner-wrap">
+          <div class="flex-1">
+            <img class="about-me-img" src="./images/picture.jpg" alt="" />
+          </div>
+          <div class="flex-1 right">
+            <h1>About <span>Me</span></h1>
+            <h3>Hello! I’m <span style="color: rgba(61, 207, 211, 0.9)">Kurt Cyryll Cubelo.</span></h3>
+            <section class="reviews" style="margin-top: 0; padding-top: 0">
+              <div class="slider">
+                <div class="slide">
+                  <p>
+                    I’m a passionate software engineer with a dedication to crafting
+                    innovative solutions and pushing the boundaries of technology.
+                    With a strong foundation in software development and a keen eye
+                    for detail, I strive to create impactful and user-friendly
+                    applications. My expertise spans across various programming
+                    languages and frameworks, allowing me to tackle complex challenges
+                    with confidence and precision.
+                  </p>
+                </div>
+                <div class="slide">
+                  <p>
+                    I have experience working with various tech stacks and technologies, including React Native, JavaScript, PHP, Laravel, React.js, MongoDB, SQLite, RESTful APIs, Node.js, Express.js, Blade, Git, and Visual Basic. This broad exposure has equipped me with a versatile skill set, enabling me to tackle diverse development challenges effectively. Throughout my journey, I have studied both frontend and backend development.
+                  </p>
+                </div>
+              </div>
+              <div class="slider-dots"></div>
+            </section>
+
+            <div class="social">
+              <a href="https://github.com/KurtCubelo?tab=repositories"
+              target="_blank"><img src="./images/social.png" alt=""
+              /></a>
+              <a href="mailto:kurtcubelo@gmail.com"
+              target="_blank"><img src="./images/email.png" alt=""
+              /></a>
+              <a href="https://www.facebook.com/profile.php?id=61571355729717" target="_blank">
+                <img src="./images/facebook.png" alt=""
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/kurt-cyryll-cubelo-a40414228/"
+                target="_blank">
+                <img src="./images/linkedin.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="services">
+        <div class="container">
+          <h1 class="section-heading"><span>My </span>Services</h1>
+          <p>
+            I deliver service with quality and focus on client satisfaction.
+          </p>
+          <div class="card-wrapper">
+            <div class="card">
+              <!-- <img src="./images/brush.svg" alt="" /> -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="0.2"
+                stroke="currentColor"
+                class="size-6"
+                width="150"
+                height="150"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25"
+                />
+              </svg>
+
+              <h2>Custom Software Development</h2>
+              <p>
+                Building tailored software solutions to meet your specific
+                business requirements.
+              </p>
+            </div>
+            <div class="card">
+              <!-- <img src="./images/code.svg" alt="" /> -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="0.2"
+                stroke="currentColor"
+                class="size-6"
+                width="150"
+                height="150"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"
+                />
+              </svg>
+
+              <h2>Web Development</h2>
+              <p>
+                Designing and developing responsive, fast, and secure websites.
+                Implementing modern web technologies to enhance user engagement
+                and satisfaction.
+              </p>
+            </div>
+            <div class="card">
+              <!-- <img src="./images/bag.svg" alt="" /> -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="0.2"
+                stroke="currentColor"
+                class="size-6"
+                width="150"
+                height="150"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z"
+                />
+              </svg>
+              <h2>E-commerce Solutions</h2>
+              <p>
+                Developing robust e-commerce platforms with integrated payment
+                gateways. Managing inventory, shipping, and customer
+                interactions for seamless online transactions.
+              </p>
+            </div>
+            <div class="card">
+              <!-- <img src="./images/desktop.svg" alt="" /> -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="0.2"
+                stroke="currentColor"
+                class="size-6"
+                width="150"
+                height="150"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605"
+                />
+              </svg>
+
+              <h2>Functional Testing</h2>
+              <p>
+                Verifying that all software functions and features work as
+                intended. Ensuring that the application meets all specified
+                requirements and user expectations.
+              </p>
+            </div>
+            <div class="card">
+              <!-- <img src="./images/media.svg" alt="" /> -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="0.2"
+                stroke="currentColor"
+                class="size-6"
+                width="150"
+                height="150"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z"
+                />
+              </svg>
+
+              <h2>Manual Testing</h2>
+              <p>
+                Performing detailed manual testing to identify and report
+                defects. Executing test cases and scenarios to ensure
+                functionality and usability.
+              </p>
+            </div>
+            <div class="card">
+              <!-- <img src="./images/phone.svg" alt="" /> -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="0.2"
+                stroke="currentColor"
+                class="size-6"
+                width="150"
+                height="150"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+                />
+              </svg>
+
+              <h2>Client Account Management</h2>
+              <p>
+                Building and maintaining strong relationships with clients to
+                understand their goals and needs. Providing ongoing support and
+                ensuring client satisfaction throughout the project lifecycle.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="freelancer">
+        <h1>I Am Available For Freelance.</h1>
+        <p>I deliver service with quality and focus on client satisfaction.</p>
+        <a href="./resources/CV.pdf" download="KurtCyryllCubelo_CV.pdf">
+          <button class="btn btn-primary">DOWNLOAD CV</button>
+        </a> 
+      </section>
+      <section class="reviews" style="text-align: center; margin: 20px auto">
+        <div class="container" style="max-width: 600px; margin: auto">
+          <h1 class="section-heading"><span>Professional</span> References</h1>
+          <p>
+            I deliver service with quality and focus on client satisfaction.
+          </p>
+          <div class="slider">
+            <div class="slide">
+              <img src="./images/bernard.png" alt="" />
+              <p>
+                Email: bernardmtorres@gmail.com<br>
+                Position: Managing Director and Chief Technology Officer
+              </p>
+              <span>- Bernard Torres, Fildev Cloud Business Software</span>
+            </div>
+            <div class="slide">
+              <img src="./images/lady.png" alt="" />
+              <p>
+                Email: glennbalaba22@gmail.com<br>
+                Phone Number: 0956-320-1667<br>
+                Position: IT Instructor
+              </p>
+              <span>- Glenn Balaba, Far Eastern Polytechnic College</span>
+            </div>
+            <div class="slide">
+              <img src="./images/lady.png" alt="" />
+              <p>
+                "Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum"
+              </p>
+              <span>- John Doel, Company ABC</span>
+            </div>
+            <div class="slide">
+              <img src="./images/lady.png" alt="" />
+              <p>
+                "Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum"
+              </p>
+              <span>- John Doel, Company ABC</span>
+            </div>
+          </div>
+          <div class="slider-dots"></div>
+        </div>
+      </section>
+
+      <section id="work" class="work">
+        <div class="container">
+          <h1 class="section-heading"><span>My</span> Personal Projects</h1>
+          <p>
+            I deliver service with quality and focus on client satisfaction.
+          </p>
+
+          <div class="card-wrapper">
+            <div class="card">
+              <div class="overlay">
+                <span>Bond Hub</span>
+                <a href="./videos/PortfolioVideo1.mp4" target="_blank">Web development(View Video Preview)</a><br>
+                <a href="https://github.com/KurtCubelo/Bond-Hub" target="_blank"> Github Link</a><br>
+              </div>
+              <img src="./images/bondhub-thumbnail.png" alt="" />
+            </div>
+            <div class="card">
+              <div class="overlay">
+                <span>Commerce-Cove</span>
+                <a href="./videos/PortfolioVideo2.mp4" target="_blank">Web development (View Video Preview)</a><br>
+                <a href="https://github.com/KurtCubelo/Commerce-Cove" target="_blank"> Github Link</a><br>
+              </div>
+              <img src="./images/commercecove-thumbnail.png" alt="" />
+            </div>
+            <!-- <div class="card">
+              <div class="overlay">
+                <span>Category</span>
+                <a href="#">Web development</a>
+              </div>
+              <img src="./images/ph-1.png" alt="" />
+            </div>
+            <div class="card">
+              <div class="overlay">
+                <span>Category</span>
+                <a href="#">Web development</a>
+              </div>
+              <img src="./images/ph-1.png" alt="" />
+            </div>
+            <div class="card">
+              <div class="overlay">
+                <span>Category</span>
+                <a href="#">Web development</a>
+              </div>
+              <img src="./images/ph-1.png" alt="" />
+            </div>
+            <div class="card">
+              <div class="overlay">
+                <span>Category</span>
+                <a href="#">Web development</a>
+              </div>
+              <img src="./images/ph-1.png" alt="" />
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <section id="blog" class="blog">
+        <div class="container">
+          <h1 class="section-heading"><span>My</span> Credentials</h1>
+          <p>
+            I deliver service with quality and focus on client satisfaction.
+          </p>
+
+          <div class="card-wrapper">
+            <div class="card">
+              <div class="img-wrapper">
+                <img src="./images/ZuittCert.jpeg" alt="Zuitt Certificate" />
+              </div>
+              <div class="card-content">
+                <a href="./images/ZuittCert.jpeg" target="_blank">
+                  <h1>My Zuitt Certificate</h1>
+                </a>
+                <span>May 10, 2024</span>
+                <div class="card-text-container">
+                  <p class="short-text">
+                    During my time at the Zuitt bootcamp, I gained a strong
+                    foundation in frontend development.
+                  </p>
+                  <div class="full-text">
+                    <p>
+                      During my time at the Zuitt bootcamp, I gained a strong
+                      foundation in frontend development. Diving deep into the
+                      essentials of HTML, CSS, and Git, among other critical
+                      technologies. The curriculum was designed to emphasize the
+                      importance of mastering the fundamentals, ensuring I had a
+                      solid grasp of the basic building blocks needed for web
+                      development. This intensive training provided me with the
+                      skills and confidence to create responsive and visually
+                      appealing web pages while maintaining efficient version
+                      control practices.
+                    </p>
+                  </div>
+                </div>
+                <a href="#" class="read-more">Read More</a>
+              </div>
+            </div>
+
+            <!-- Repeat the same pattern for other cards -->
+            <div class="card">
+              <div class="img-wrapper">
+                <img src="./images/article-ph-1.png" alt="" />
+              </div>
+              <div class="card-content">
+                <a href="#" target="_blank"><h1>My OJT Certificate</h1></a>
+                <span>Dec 16, 2024</span>
+                <div class="card-text-container">
+                  <p class="short-text">
+                    During my OJT at Fildev Cloud Business and Software, located in BGC, I gained invaluable experience and honed my skills.
+                  </p>
+                  <div class="full-text">
+                    <p>
+                      During my OJT at Fildev Cloud Business and Software which is located in BGC, I gained invaluable experience and honed my skills. Initially, I worked as a Full Stack Developer, responsible for the entire development process from planning and coding to debugging and testing. I participated in Scrum meetings, created story points, and performed testing in Jira, including test cases, test cycles, and test plans. I developed a hotel management system using VB.NET and managed the website with simple HTML and CSS. I also walked through the CRM and ERP systems, which utilized React.js, Node.js, and MongoDB. Additionally, I had the opportunity to directly communicate with clients. Following my OJT, I was fortunate to be hired as a Business Development Specialist.
+                    </p>
+                  </div>
+                </div>
+                <a href="#" class="read-more">Read More</a>
+              </div>
+            </div>
+
+            <!-- Third card follows the same pattern -->
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <h1 class="section-heading">Contact <span>Me</span></h1>
+          <p>
+            I deliver service with quality and focus on client satisfaction.
+          </p>
+          <div class="card-wrapper">
+            <div class="card">
+              <img src="./images/phone2.png" alt="" style="width: 50px" />
+              <h1>Call Me On</h1>
+              <h6>+639 499 291 618</h6>
+            </div>
+            <div class="card">
+              <img src="./images/email2.png" alt="" style="width: 50px" />
+              <h1>Email Me At</h1>
+              <h6>kurtcubelo@gmail.com</h6>
+            </div>
+            <div class="card">
+              <img src="./images/facebook2.png" alt="" style="width: 50px" />
+              <h1>DM Me At</h1>
+              <h6>Kurt Cyryll Cubelo</h6>
+            </div>
+            <!-- <div class="card">
+              <img src="./images/map.svg" alt="" />
+              <h1>Visit Office</h1>
+              <h6>99 S.t Jomblo Park Pekanbaru 28292. Indonesia</h6>
+            </div> -->
+          </div>
+
+          <!-- <form action="">
+            <div class="input-wrap">
+              <input type="text" placeholder="Your Name *" />
+              <input type="email" placeholder="Your Email *" />
+            </div>
+            <div class="input-wrap-2">
+              <input type="text" placeholder="Your Subject..." />
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Your Message..."
+              ></textarea>
+            </div>
+            <div class="btn-wrapper">
+              <button class="btn btn-primary">Send Message</button>
+            </div>
+          </form> -->
+        </div>
+      </section>
+      <footer>
+        <img class="footer-logo" src="./images/logo.png" alt="" />
+        <div class="footer-socials">
+          <a href="https://github.com/KurtCubelo?tab=repositories"
+          target="_blank"><img src="./images/social.png" alt="" style="width: 20px; filter: brightness(0) invert(1);"
+          /></a>
+          <a href="https://www.facebook.com/profile.php?id=61571355729717"
+          target="_blank"><img src="./images/facebook.png" alt="" style="width: 20px; filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(93deg) brightness(119%) contrast(105%);"
+          /></a>
+          <a href="mailto:kurtcubelo@gmail.com" target="_blank">
+            <img src="./images/email.png" alt="" style="width: 20px; filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(93deg) brightness(119%) contrast(105%);" /></a>
+          </a>
+          <a href="https://www.linkedin.com/in/kurt-cyryll-cubelo-a40414228/" target="_blank">
+            <img src="./images/linkedin.png" alt="" style="width: 20px; filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(93deg) brightness(119%) contrast(105%);"
+          /></a>
+        </div>
+        <div class="copyright"><span id="year"></span> © AKAPP</div>
+      </footer>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
